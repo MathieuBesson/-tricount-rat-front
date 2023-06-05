@@ -1,4 +1,4 @@
-# TricountRat API
+# TricountRat Front
 
 Cette appplication est basée sur les fonctionnalités simplifiés de [Tricount](https://www.tricount.com/fr/faire-les-comptes-entre-amis).
 
