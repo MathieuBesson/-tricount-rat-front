@@ -1,3 +1,4 @@
+import Menu from './components/menu'
 import './globals.css'
 import { Inter } from 'next/font/google'
 
@@ -15,7 +16,14 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>{children}</body>
+      <body
+        className={inter.className}
+        suppressHydrationWarning={true}
+      >
+        <h1 className="text-4xl mt-20 text-white font-bold dark:text-white text-center">Tricount Rat</h1>
+        {children}
+        <Menu />
+      </body>
     </html>
   )
 }

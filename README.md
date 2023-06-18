@@ -7,12 +7,6 @@ Cette appplication est basée sur les fonctionnalités simplifiés de [Tricount]
 Le projet utilise docker comme environnement de travail.
 Il vous faudra donc au préalable avoir [docker](https://docs.docker.com/engine/install/) et [docker-compose](https://docs.docker.com/compose/install/) installés sur sur votre machine pour pouvoir lancer le projet
 
-## Configuration
-
-### Définition des variables d'environnement.
-
-De manière à utiliser vos propres variables d'envionnement il est nécéssaire de redéfinir les variables présentent dans le fichier `.env.example` dans un nouveau fichier `.env` avec des valeurs au choix.
-
 ## Installation
 
 La commande suivante va lancer le conteneur `node` nécéssaires au projet à partir des images référencés dans le fichier `docker-compose.yml`.
@@ -32,6 +26,10 @@ Vous pouvez maintenant accèder au front sur le port suivant :
 ```bash
 docker exec tricount-rat-front npm install {package-name}
 ```
+
+## Warning sur le typage
+
+De nombreux warning sont présent dans le front du au faible typage TS du projet. Le manque de temps sur la fin du développement m'a empêcher de les solutionner  en configurant proprement le typage du projet
 
 ## Liens utiles
 
