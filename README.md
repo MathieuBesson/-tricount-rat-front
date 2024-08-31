@@ -1,38 +1,41 @@
 # TricountRat Front
 
-Cette appplication est basée sur les fonctionnalités simplifiés de [Tricount](https://www.tricount.com/fr/faire-les-comptes-entre-amis).
+This application is based on the simplified features of [Tricount](https://www.tricount.com/fr/faire-les-comptes-entre-amis).
 
-## Pré-requis
+## Prerequisites
 
-Le projet utilise docker comme environnement de travail.
-Il vous faudra donc au préalable avoir [docker](https://docs.docker.com/engine/install/) et [docker-compose](https://docs.docker.com/compose/install/) installés sur sur votre machine pour pouvoir lancer le projet
+![docker](https://img.shields.io/badge/docker-v27-2496ED?logo=docker&logoColor=white&labelColor=2496ED&color=white)
+![docker-compose](https://img.shields.io/badge/docker--compose-v1-2496ED?logo=docker&logoColor=white&labelColor=2496ED&color=white)
 
 ## Installation
 
-La commande suivante va lancer le conteneur `node` nécéssaires au projet à partir des images référencés dans le fichier `docker-compose.yml`.
+The following command will start the `node` container required for the project using the images referenced in the `docker-compose.yml` file.
 
 ```bash
 docker-compose up --build -d
 ```
 
-Vous pouvez maintenant accèder au front sur le port suivant : 
+You can now access the frontend at the following port:
 
-- `front` : [http://localhost:4000](http://localhost:4000)
+- `frontend`: [http://localhost:4000](http://localhost:4000)
 
-## Informations utiles
+## Useful Information
 
-- Installer des dépendances directement depuis le conteneur : 
+- Install dependencies directly from the container:
 
 ```bash
 docker exec tricount-rat-front npm install {package-name}
 ```
 
-## Warning sur le typage
+## Back-end
 
-De nombreux warning sont présent dans le front du au faible typage TS du projet. Le manque de temps sur la fin du développement m'a empêcher de les solutionner  en configurant proprement le typage du projet
+The back-end of **TricountRat** is a web application built with **Nest.js**. You can find it here: [tricount-rat-api](https://github.com/MathieuBesson/tricount-rat-api).
 
-## Liens utiles
 
-Next.js : 
- - [Documentation](https://nextjs.org/docs)
- - [Github Repository](https://github.com/vercel/next.js/)
+## TODO
+
+- Fix the many typing issues or lack of typing
+
+## License
+
+This project is licensed under the GPL License. See the [LICENSE](./LICENSE) file for more details.
